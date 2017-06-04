@@ -13,3 +13,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 # Define binary target
 add_executable(mock-formula main.c)
 
+install(
+    TARGETS mock-formula
+    DESTINATION "${CMAKE_INSTALL_PREFIX}/bin"
+)
